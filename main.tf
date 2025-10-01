@@ -12,3 +12,9 @@ resource "aws_instance" "example" {
 resource "aws_vpc" "my_vpcc" {
   cidr_block = "10.0.0.0/16"
 }
+resource "aws_vpc" "vpc"{
+  cidr_block = "20.20.20.0/24"
+  tags = {
+    name = "my_vpc"
+  }
+}
