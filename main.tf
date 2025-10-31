@@ -13,4 +13,11 @@ resource "aws_vpc" "vpc1"{
     name = "my_vpc"
   }
 }
+resource "aws_vpc" "vpc2"{
+  cidr_block = "30.10.0.0/16"
+  tags = {
+    name = "my_vpc"
+  }
+}
+
 
