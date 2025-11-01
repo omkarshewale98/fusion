@@ -19,5 +19,8 @@ resource "aws_vpc" "vpc2"{
     name = "my_vpc"
   }
 }
+resource "aws_vpc" "vpc3"{
+  cidr_block = "40.40.0.0/16"
+}
 
 
